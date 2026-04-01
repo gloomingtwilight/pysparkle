@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "level": "beginner",
+    "title": "Introduction to Python",
+    "description": "Welcome to Python! Learn the print function and basic syntax.",
+    "theory": "Python is a popular, beginner-friendly programming language. The `print()` function outputs text to the screen.\n\nSyntax:\n```python\nprint(\"Hello, World!\")\n```",
+    "task": "Write a program that prints 'Hello, World!'",
+    "startingCode": "# Print Hello, World!\n",
+    "expectedOutput": "Hello, World!\n"
+  },
+  {
+    "id": 2,
+    "level": "beginner",
+    "title": "Variables & Data Types",
+    "description": "Learn to store and manipulate data using variables.",
+    "theory": "Variables store data values. Assign using `=`. Common types: int, float, str, bool\n\nExample:\n```python\nname = \"Alice\"\nage = 25\nheight = 5.6\n```",
+    "task": "Create variables: name, age, and favorite_color. Print all of them.",
+    "startingCode": "# Create variables and print them\n",
+    "expectedOutput": "Alice\n25\nblue\n"
+  },
+  {
+    "id": 3,
+    "level": "beginner",
+    "title": "User Input & Type Casting",
+    "description": "Take input from users and convert between data types.",
+    "theory": "Use `input()` to get user data. Convert types with `int()`, `str()`, `float()`\n\nExample:\n```python\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n```",
+    "task": "Ask for a name and age, then print them.",
+    "startingCode": "# Get user input\n",
+    "expectedOutput": "Enter your name: \nEnter your age: \n"
+  },
+  {
+    "id": 4,
+    "level": "beginner",
+    "title": "Operators (Arithmetic & Logical)",
+    "description": "Master arithmetic (+, -, *, /, %) and logical operators (and, or, not).",
+    "theory": "Arithmetic: +, -, *, /, //, %, **\nLogical: and, or, not\nComparison: ==, !=, <, >, <=, >=\n\nExample:\n```python\nresult = 10 + 5\nboth_true = True and False\n```",
+    "task": "Calculate: 20 + 15, 10 * 3, and 25 // 3. Print results.",
+    "startingCode": "# Calculate and print\n",
+    "expectedOutput": "35\n30\n8\n"
+  },
+  {
+    "id": 5,
+    "level": "beginner",
+    "title": "Conditional Statements (if-else)",
+    "description": "Control program flow with conditions.",
+    "theory": "Use if, elif, else to execute code conditionally.\n\nExample:\n```python\nif age >= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n```",
+    "task": "Check if a number is positive, negative, or zero.",
+    "startingCode": "num = 5\n# Add your if-else logic\n",
+    "expectedOutput": "Positive\n"
+  },
+  {
+    "id": 6,
+    "level": "beginner",
+    "title": "Loops (for & while)",
+    "description": "Repeat code using for and while loops.",
+    "theory": "for loop iterates over sequences. while loop repeats while condition is true.\n\nExample:\n```python\nfor i in range(5):\n    print(i)\n```",
+    "task": "Print numbers 1 to 5 using a for loop.",
+    "startingCode": "# Print 1 to 5\n",
+    "expectedOutput": "1\n2\n3\n4\n5\n"
+  },
+  {
+    "id": 7,
+    "level": "beginner",
+    "title": "Functions (Basics)",
+    "description": "Write reusable code using functions.",
+    "theory": "Functions are reusable blocks of code defined with `def`.\n\nExample:\n```python\ndef greet(name):\n    print(f\"Hello, {name}!\")\ngreet(\"Alice\")\n```",
+    "task": "Create a function that adds two numbers and returns the sum.",
+    "startingCode": "# Define a function that adds two numbers\n",
+    "expectedOutput": "15\n"
+  },
+  {
+    "id": 8,
+    "level": "beginner",
+    "title": "Lists",
+    "description": "Store multiple values in a single variable.",
+    "theory": "Lists are ordered, mutable collections. Access with index [0], [1], etc.\n\nExample:\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[0])\nfruits.append(\"date\")\n```",
+    "task": "Create a list of 3 fruits and print the first one.",
+    "startingCode": "# Create a list of fruits\n",
+    "expectedOutput": "apple\n"
+  },
+  {
+    "id": 9,
+    "level": "beginner",
+    "title": "Tuples & Sets",
+    "description": "Learn immutable sequences and unique collections.",
+    "theory": "Tuples are immutable: (1, 2, 3). Sets are unordered unique values: {1, 2, 3}\n\nExample:\n```python\nmy_tuple = (1, 2, 3)\nmy_set = {1, 2, 3}\n```",
+    "task": "Create a tuple and a set, then print them.",
+    "startingCode": "# Create tuple and set\n",
+    "expectedOutput": "(1, 2, 3)\n{1, 2, 3}\n"
+  },
+  {
+    "id": 10,
+    "level": "beginner",
+    "title": "Dictionaries",
+    "description": "Store key-value pairs for organized data.",
+    "theory": "Dictionaries map keys to values using {}.\n\nExample:\n```python\nperson = {\"name\": \"Alice\", \"age\": 25}\nprint(person[\"name\"])\n```",
+    "task": "Create a dict with name and age keys, print the values.",
+    "startingCode": "# Create a dictionary\n",
+    "expectedOutput": "Alice\n25\n"
+  },
+  {
+    "id": 11,
+    "level": "beginner",
+    "title": "Strings (Basic Operations)",
+    "description": "Manipulate text strings.",
+    "theory": "Strings can be concatenated (+), repeated (*), indexed, and sliced.\n\nExample:\n```python\ntext = \"Hello\"\nprint(text + \" World\")\nprint(text.upper())\n```",
+    "task": "Concatenate and print: 'Hello' + ' ' + 'Python'",
+    "startingCode": "# Concatenate strings\n",
+    "expectedOutput": "Hello Python\n"
+  },
+  {
+    "id": 12,
+    "level": "beginner",
+    "title": "Mini Project: Calculator / Number Guessing Game",
+    "description": "Apply beginner concepts to build a fun game.",
+    "theory": "Combine loops, conditionals, input, and random module for a guessing game.\n\nExample structure:\n1. Generate random number\n2. Loop: ask for guess\n3. Check if correct\n4. Repeat until found",
+    "task": "Create a number guessing game where the user guesses a number between 1-10.",
+    "startingCode": "import random\n# Create your guessing game\n",
+    "expectedOutput": "Game starts... guess a number\n"
+  },
+  {
+    "id": 13,
+    "level": "intermediate",
+    "title": "File Handling (read/write)",
+    "description": "Read from and write to files.",
+    "theory": "Use `open()` to work with files in modes: 'r' (read), 'w' (write), 'a' (append)\n\nExample:\n```python\nwith open(\"file.txt\", \"r\") as f:\n    data = f.read()\n```",
+    "task": "Write text to a file and read it back.",
+    "startingCode": "# Write and read file\n",
+    "expectedOutput": "File operations completed\n"
+  },
+  {
+    "id": 14,
+    "level": "intermediate",
+    "title": "Exception Handling (try-except)",
+    "description": "Handle errors gracefully.",
+    "theory": "Use try-except-finally to catch and handle exceptions.\n\nExample:\n```python\ntry:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero!\")\n```",
+    "task": "Wrap division in try-except to handle division by zero.",
+    "startingCode": "# Add exception handling\n",
+    "expectedOutput": "Cannot divide by zero!\n"
+  },
+  {
+    "id": 15,
+    "level": "intermediate",
+    "title": "Modules & Packages",
+    "description": "Import and use Python libraries.",
+    "theory": "Modules are files with Python code. Import with `import` or `from...import`\n\nExample:\n```python\nimport math\nprint(math.sqrt(16))\nfrom datetime import datetime\n```",
+    "task": "Use the math module to calculate square root of 25.",
+    "startingCode": "# Import and use math module\n",
+    "expectedOutput": "5.0\n"
+  },
+  {
+    "id": 16,
+    "level": "intermediate",
+    "title": "Working with Dates & Time",
+    "description": "Handle dates and times in Python.",
+    "theory": "Use `datetime` module for date/time operations.\n\nExample:\n```python\nfrom datetime import datetime\nnow = datetime.now()\nprint(now)\n```",
+    "task": "Print the current date and time.",
+    "startingCode": "# Print current date and time\n",
+    "expectedOutput": "2026-04-01\n"
+  },
+  {
+    "id": 17,
+    "level": "intermediate",
+    "title": "Object-Oriented Programming (Classes & Objects)",
+    "description": "Introduce OOP concepts with classes and objects.",
+    "theory": "Classes define blueprints. Objects are instances of classes.\n\nExample:\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\ndog = Dog(\"Buddy\")\n```",
+    "task": "Create a Person class with name and age attributes.",
+    "startingCode": "# Define a Person class\n",
+    "expectedOutput": "Person created\n"
+  },
+  {
+    "id": 18,
+    "level": "intermediate",
+    "title": "OOP Concepts (Inheritance & Encapsulation)",
+    "description": "Master inheritance and data hiding.",
+    "theory": "Inheritance: child class inherits from parent.\nEncapsulation: private attributes with __ prefix.\n\nExample:\n```python\nclass Animal:\n    def sound(self):\n        pass\nclass Dog(Animal):\n    def sound(self):\n        return \"Woof\"\n```",
+    "task": "Create parent Animal class and child Dog class.",
+    "startingCode": "# Inheritance example\n",
+    "expectedOutput": "Woof\n"
+  },
+  {
+    "id": 19,
+    "level": "intermediate",
+    "title": "String Manipulation (Advanced)",
+    "description": "Learn advanced string operations.",
+    "theory": "Methods: split(), join(), replace(), find(), format()\n\nExample:\n```python\ntext = \"Hello World\"\nparts = text.split()\nprint(parts[0])\n```",
+    "task": "Split a sentence into words and print the first word.",
+    "startingCode": "# String manipulation\n",
+    "expectedOutput": "Hello\n"
+  },
+  {
+    "id": 20,
+    "level": "intermediate",
+    "title": "List Comprehensions",
+    "description": "Create lists concisely with comprehensions.",
+    "theory": "Compact syntax to create lists with filters.\n\nExample:\n```python\nsquares = [x**2 for x in range(5)]\nprint(squares)\n```",
+    "task": "Create a list of squares for numbers 1-5.",
+    "startingCode": "# List comprehension\n",
+    "expectedOutput": "[1, 4, 9, 16, 25]\n"
+  },
+  {
+    "id": 21,
+    "level": "intermediate",
+    "title": "Lambda Functions",
+    "description": "Write small anonymous functions.",
+    "theory": "Lambda: anonymous, one-line functions.\n\nExample:\n```python\nsquare = lambda x: x**2\nprint(square(5))\n```",
+    "task": "Use lambda to create a function that multiplies by 2.",
+    "startingCode": "# Lambda function\n",
+    "expectedOutput": "10\n"
+  },
+  {
+    "id": 22,
+    "level": "intermediate",
+    "title": "Mini Project: CLI To-Do App / File Manager",
+    "description": "Build a command-line application combining multiple concepts.",
+    "theory": "Combine file handling, loops, conditionals, and functions.\n\nStructure:\n1. Menu: Add/View/Delete tasks\n2. Save to file\n3. Load from file",
+    "task": "Create a simple to-do app with add, view, and delete options.",
+    "startingCode": "# CLI To-Do App\n",
+    "expectedOutput": "To-Do App Started\n"
+  },
+  {
+    "id": 23,
+    "level": "advanced",
+    "title": "OOP Advanced (Polymorphism & Dunder Methods)",
+    "description": "Master advanced OOP features.",
+    "theory": "Polymorphism: different classes same method.\nDunder methods: __str__, __repr__, __add__\n\nExample:\n```python\nclass Shape:\n    def area(self):\n        pass\nclass Circle(Shape):\n    def area(self):\n        return 3.14 * r**2\n```",
+    "task": "Create classes with __str__ method.",
+    "startingCode": "# Advanced OOP\n",
+    "expectedOutput": "Object representation\n"
+  },
+  {
+    "id": 24,
+    "level": "advanced",
+    "title": "Decorators (Practical Usage)",
+    "description": "Enhance functions with decorators.",
+    "theory": "Decorators modify function behavior without changing source.\n\nExample:\n```python\ndef decorator(func):\n    def wrapper():\n        print(\"Before\")\n        func()\n    return wrapper\n```",
+    "task": "Create a decorator that prints function name before execution.",
+    "startingCode": "# Decorator example\n",
+    "expectedOutput": "Executing function\n"
+  },
+  {
+    "id": 25,
+    "level": "advanced",
+    "title": "Generators & Iterators",
+    "description": "Create memory-efficient sequences.",
+    "theory": "Generators use `yield`. Iterators implement __iter__ and __next__.\n\nExample:\n```python\ndef gen():\n    for i in range(5):\n        yield i\nfor num in gen():\n    print(num)\n```",
+    "task": "Create a generator that yields even numbers up to 10.",
+    "startingCode": "# Generator function\n",
+    "expectedOutput": "0\\n2\\n4\\n6\\n8\\n10\\n"
+  },
+  {
+    "id": 26,
+    "level": "advanced",
+    "title": "Working with APIs (requests library)",
+    "description": "Fetch data from web services.",
+    "theory": "HTTP requests: GET, POST using `requests` library.\n\nExample:\n```python\nimport requests\nresponse = requests.get('https://api.example.com/data')\ndata = response.json()\n```",
+    "task": "Fetch and display data from a public API.",
+    "startingCode": "# API request example\n",
+    "expectedOutput": "API data retrieved\n"
+  },
+  {
+    "id": 27,
+    "level": "advanced",
+    "title": "JSON Handling",
+    "description": "Parse and generate JSON data.",
+    "theory": "JSON: JavaScript Object Notation. Use `json` module.\n\nExample:\n```python\nimport json\ndata = json.loads('{\"name\": \"Alice\"}')\nprint(data['name'])\n```",
+    "task": "Parse JSON string and access values.",
+    "startingCode": "# JSON handling\n",
+    "expectedOutput": "Alice\n"
+  },
+  {
+    "id": 28,
+    "level": "advanced",
+    "title": "Virtual Environments & pip",
+    "description": "Manage project dependencies.",
+    "theory": "Virtual environments isolate packages per project.\n\nCommands:\n- python -m venv venv\n- pip install package_name\n- pip freeze > requirements.txt",
+    "task": "Understand virtual environment setup concepts.",
+    "startingCode": "# Virtual environment basics\n",
+    "expectedOutput": "Concept understood\n"
+  },
+  {
+    "id": 29,
+    "level": "advanced",
+    "title": "Debugging & Code Optimization Basics",
+    "description": "Write efficient, bug-free code.",
+    "theory": "Use debuggers, print statements, and profiling.\nOptimization: reduce complexity, use appropriate data structures.\n\nExample:\n```python\nimport time\nstart = time.time()\nend = time.time()\n```",
+    "task": "Measure execution time of a simple function.",
+    "startingCode": "# Debugging basics\n",
+    "expectedOutput": "Execution time measured\n"
+  },
+  {
+    "id": 30,
+    "level": "advanced",
+    "title": "Final Project: API-based App (Weather App / GitHub Viewer)",
+    "description": "Build a complete application using learned concepts.",
+    "theory": "Combine: APIs, JSON, file handling, OOP, error handling.\n\nStructure:\n1. Fetch data from API\n2. Parse JSON\n3. Display results\n4. Handle errors",
+    "task": "Build a weather app that fetches and displays current weather.",
+    "startingCode": "# Weather App Project\n",
+    "expectedOutput": "Weather app loaded\n"
+  }
+]

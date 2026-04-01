@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson - PySparkle</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-panel" style="padding: 10px 5%;">
+        <div style="display: flex; align-items: center; gap: 20px;">
+            <a href="dashboard.html" class="btn" style="padding: 8px 15px; font-size: 0.9rem;">
+                Back to Roadmap
+            </a>
+            <h2 id="lesson-nav-title" style="margin: 0; font-size: 1.2rem; color: var(--text-muted);">Lesson Title</h2>
+        </div>
+        <div>
+            <span class="text-gradient" style="font-weight: 700;">PySparkle Engine</span>
+        </div>
+    </nav>
+
+    <div class="lesson-layout slide-up">
+        <!-- Left Panel: Theory & Instructions -->
+        <div class="theory-panel glass-panel">
+            <div class="theory-content" id="theory-content">
+                <h2>Loading Lesson...</h2>
+                <div class="loading-pulse" style="width: 100%; height: 20px; background: rgba(255,255,255,0.1); margin-bottom: 15px; border-radius: 4px;"></div>
+                <div class="loading-pulse" style="width: 80%; height: 20px; background: rgba(255,255,255,0.1); margin-bottom: 15px; border-radius: 4px;"></div>
+                <div class="loading-pulse" style="width: 90%; height: 20px; background: rgba(255,255,255,0.1); margin-bottom: 15px; border-radius: 4px;"></div>
+            </div>
+            
+            <div class="task-box">
+                <h3>Your Task</h3>
+                <p id="task-content">Wait for lesson to load...</p>
+            </div>
+            <div style="margin-top: 20px; color: var(--text-muted); font-size: 0.9rem;">
+                <strong>Expected Output:</strong>
+                <pre id="expected-output" style="background: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 4px; margin-top: 5px;"></pre>
+            </div>
+        </div>
+
+        <!-- Right Panel: Editor & Output -->
+        <div class="workspace-panel">
+            <div class="editor-toolbar">
+                <span style="font-family: var(--font-code); color: var(--primary);">main.py</span>
+                <button class="btn btn-run" id="run-btn">
+                    Run Code ▶
+                </button>
+            </div>
+            <div class="editor-wrapper glass-panel" id="editor-container">
+                <!-- Monaco Editor will mount here -->
+            </div>
+            
+            <div class="output-wrapper">
+                <div class="output-header">
+                    <span>Console Output</span>
+                    <span id="exec-status" style="font-size: 0.8rem; font-family: var(--font-main); color: var(--text-muted);">Waiting...</span>
+                </div>
+                <div class="output-content" id="output">Run your code to see the output here...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-icon">🌟</div>
+            <h2 class="modal-title text-gradient">Awesome Job!</h2>
+            <p style="margin-bottom: 30px;">You've successfully completed this lesson.</p>
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <a href="dashboard.html" class="btn">Roadmap</a>
+                <a href="#" id="next-lesson-btn" class="btn btn-primary">Next Lesson</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.38.0/min/vs/loader.min.js"></script>
+    <script src="js/lesson.js"></script>
+</body>
+</html>

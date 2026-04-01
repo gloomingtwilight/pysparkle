@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap - PySparkle</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar glass-panel">
+        <a href="index.html" class="logo">
+            <span class="text-gradient">PySparkle</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <main class="container slide-up">
+        <div class="dashboard-header">
+            <h1 class="text-gradient" style="font-size: 3rem;">Your Python Journey</h1>
+            <p>Complete challenges to unlock the next level.</p>
+            
+            <div class="progress-stats glass-panel" style="display: inline-flex; padding: 20px 40px; border-radius: 20px;">
+                <div class="stat-item">
+                    <div class="stat-value" id="completed-count">0</div>
+                    <div>Lessons Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value" id="total-count" style="color: var(--primary);">0</div>
+                    <div>Total Lessons</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="roadmap-container" id="roadmap">
+            <div class="roadmap-line"></div>
+            <!-- Lesson cards will be inserted here dynamically -->
+            <div style="text-align: center; color: var(--text-muted); padding: 50px;">
+                <h3>Loading roadmap...</h3>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
