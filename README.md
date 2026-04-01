@@ -385,57 +385,7 @@ To add a new lesson:
 
 ---
 
-## 🚀 Deployment
 
-### Quick Deploy to Heroku
-
-```bash
-# Backend
-cd backend
-heroku create your-app-name
-git push heroku main
-
-# Frontend
-cd frontend
-vercel
-```
-
-### Update API URLs
-
-Edit frontend JavaScript files with production URL:
-```javascript
-// Old:
-fetch('http://localhost:3000/api/lessons')
-
-// New:
-fetch('https://your-app.herokuapp.com/api/lessons')
-```
-
-See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed instructions.
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables (Backend)
-
-```env
-PORT=3000
-NODE_ENV=production
-JUDGE0_API_URL=https://ce.judge0.com
-```
-
-### CORS Settings
-
-```javascript
-// Allow specific origins
-app.use(cors({
-  origin: ['https://yourdomain.com'],
-  credentials: true
-}));
-```
-
----
 
 ## 📊 Performance Metrics
 
@@ -509,9 +459,7 @@ app.use(cors({
 ## 📚 Documentation
 
 - [QUICK_START.md](QUICK_START.md) - 30-second setup
-- [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) - Detailed specs
 - [LESSON_INDEX.md](LESSON_INDEX.md) - Complete lesson reference
-- [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) - Production deployment
 - [LESSON_VERIFICATION.md](LESSON_VERIFICATION.md) - QA checklist
 
 ---
@@ -539,22 +487,7 @@ Want to improve PySparkle?
 3. Make your changes
 4. Submit a pull request
 
----
 
-## 📄 License
-
-MIT License - See LICENSE file for details
-
----
-
-## 🔗 Links
-
-- **Live Demo**: [PySparkle.com](https://pysparkle.com)
-- **GitHub**: [github.com/yourname/pysparkle](https://github.com)
-- **Issues**: [Report a bug](https://github.com/yourname/pysparkle/issues)
-- **Judge0**: [judge0.com](https://judge0.com)
-
----
 
 ## 👋 Support
 
@@ -567,27 +500,7 @@ For issues, questions, or suggestions:
 
 ---
 
-## 📈 Roadmap
 
-### Version 1.1
-- [ ] Add user authentication
-- [ ] Save progress to MongoDB
-- [ ] Add user profiles
-- [ ] Certificate generation
-
-### Version 1.2
-- [ ] Discussion forums
-- [ ] Peer code review
-- [ ] Leaderboard
-- [ ] Gamification system
-
-### Version 2.0
-- [ ] Mobile app (React Native)
-- [ ] AI-powered hints
-- [ ] Advanced analytics
-- [ ] IDE integration
-
----
 
 ## 🙏 Credits
 
@@ -599,16 +512,7 @@ Built with ❤️ for Python learners everywhere.
 - Judge0 - Code execution
 - Glassmorphism - UI design
 
----
 
-## 📞 Contact
-
-**Questions or feedback?**
-- Email: support@pysparkle.com
-- Twitter: @PySparkle
-- Discord: [Join Community](https://discord.gg/pysparkle)
-
----
 
 **Happy Learning! 🐍**
 
