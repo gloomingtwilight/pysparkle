@@ -91,10 +91,16 @@ async function executeCode() {
     statusEl.textContent = 'Executing...';
 
     try {
+        // Check if lesson needs stdin input
+        const stdinInput = prompt('Enter input for the program (press Cancel for no input):', '');
+        
         const response = await fetch('http://localhost:3000/api/execute', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ source_code: sourceCode })
+            body: JSON.stringify({ 
+                source_code: sourceCode,
+                stdin: stdinInput || ""  // Pass stdin if provided
+            })
         });
 
         const data = await response.json();

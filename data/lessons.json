@@ -23,11 +23,11 @@
     "id": 3,
     "level": "beginner",
     "title": "User Input & Type Casting",
-    "description": "Take input from users and convert between data types.",
-    "theory": "Use `input()` to get user data. Convert types with `int()`, `str()`, `float()`\n\nExample:\n```python\nname = input(\"Enter your name: \")\nage = int(input(\"Enter your age: \"))\n```",
-    "task": "Ask for a name and age, then print them.",
-    "startingCode": "# Get user input\n",
-    "expectedOutput": "Enter your name: \nEnter your age: \n"
+    "description": "Learn type casting - converting between data types.",
+    "theory": "Type casting converts one data type to another.\n\nCommon functions:\n- `int()` - convert to integer\n- `str()` - convert to string\n- `float()` - convert to float\n\nExample:\n```python\nage_str = \"25\"\nage_int = int(age_str)  # Convert string to int\nprint(age_int + 5)  # 30\n```",
+    "task": "Convert a string number to an integer, add 5 to it, and print the result.",
+    "startingCode": "num_str = \"10\"\n# Convert to int and add 5\n",
+    "expectedOutput": "15\n"
   },
   {
     "id": 4,

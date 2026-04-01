@@ -39,7 +39,7 @@ app.get('/api/lessons/:id', (req, res) => {
 
 // Code execution using Judge0 Free API (ce.judge0.com)
 app.post('/api/execute', async (req, res) => {
-    const { source_code } = req.body;
+    const { source_code, stdin } = req.body;
     
     try {
         const response = await fetch('https://ce.judge0.com/submissions?base64_encoded=false&wait=true', {
@@ -47,7 +47,8 @@ app.post('/api/execute', async (req, res) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
                 language_id: 71, // 71 is Python (3.8.1)
-                source_code: source_code
+                source_code: source_code,
+                stdin: stdin || "" // Support stdin input for interactive lessons
             })
         });
 
